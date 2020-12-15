@@ -84,7 +84,10 @@ const DivStyleTwo = styled.div`
 
     div {
         margin-top: 1em;
-        width: 500px;
+    }
+
+    .gatsby-image-wrapper {
+        width: 600px;
     }
 
     @media (max-width: 1024px){
@@ -113,7 +116,7 @@ export const query = graphql`
 `
 
 export default function HomePage({ data }) {
-    console.log("Data: ", data);
+    // console.log("Data: ", data);
     return (
         <div>
             <HeadingStyle>
