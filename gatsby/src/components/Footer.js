@@ -48,12 +48,12 @@ export default function Footer(){
             <p>&copy; VCU Triangle {new Date().getFullYear()}</p>
             <div>
                 <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-                    <a href="https://instagram.com/triangle_vcu" className="round black">
+                    <a href="https://instagram.com/triangle_vcu" aria-label="Instagram Link" className="round black" target="_blank" rel="noopener">
                         <FaInstagram/>
                     </a>
                 </IconContext.Provider>
                 <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
-                    <a href="https://www.facebook.com/trianglevcu/" className="round blue">
+                    <a href="https://www.facebook.com/trianglevcu/" aria-label="Facebook Link" className="round blue" target="_blank" rel="noopener">
                         <ImFacebook/>
                     </a>
                 </IconContext.Provider>

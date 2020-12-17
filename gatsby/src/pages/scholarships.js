@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import FaqList from '../components/FaqList';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 
 const SpanStyle = styled.span`
     color: var(--rose);
@@ -57,6 +58,7 @@ export default function ScholarshipPage({ data }){
     
     return (
         <div>
+            <SEO title="Scholarships"/>
             <h1>Scholarships</h1>
             <br/>
             <h3><SpanStyle>$1,000</SpanStyle> - VCU Triangle Leader Scholarship</h3>

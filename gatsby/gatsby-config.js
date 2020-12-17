@@ -11,7 +11,8 @@ export default {
         description: 'The Triangle chapter at Virginia Commonwealth University'
     },
     plugins: [
-        // "gatsby-plugin-react-helmet",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-robots-txt",
         "gatsby-plugin-styled-components",
         {
             resolve: "gatsby-source-sanity",
@@ -29,6 +30,13 @@ export default {
             options: {
                 name: `images`,
                 path: path.join(__dirname, `/src/assets/images`)
+            }
+        },
+        {
+            resolve: "gatsby-plugin-google-analytics",
+            options: {
+                trackingId: "G-FJ8MHR1RXV",
+                head: true
             }
         }
     ]

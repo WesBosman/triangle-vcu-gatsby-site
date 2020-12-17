@@ -7,6 +7,7 @@ import { IconContext } from 'react-icons';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import { device } from '../styles/DeviceSizes';
+import SEO from '../components/SEO';
 
 const HeadingStyle = styled.h1`
     text-size: 4em;
@@ -101,6 +102,7 @@ export default function HomePage({ data }) {
     // console.log("Data: ", data);
     return (
         <div>
+            <SEO title="Home"/>
             <HeadingStyle>
                 Triangle Fraternity at VCU
             </HeadingStyle>

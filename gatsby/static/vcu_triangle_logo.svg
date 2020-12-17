@@ -1,0 +1,6 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1000" height="1000" fill="white"/>
+<rect width="1000" height="1000" fill="#FFBA10"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M889.711 775L500 100L110.289 775H889.711ZM781.458 712.5L500 225L218.542 712.5H781.458Z" fill="#1C1C1C"/>
+<path d="M322 500H499.5M677 500H499.5M499.5 500V774" stroke="#1C1C1C" stroke-width="60"/>
+</svg>
