@@ -103,6 +103,12 @@ const GlobalStyles = createGlobalStyle`
   .rose {
     color: var(--rose);
   }
+
+  .grid-responsive {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 `;
 
 export default GlobalStyles;

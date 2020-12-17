@@ -23,11 +23,17 @@ const ParagraphStyle = styled.p`
 
 const GridStyle = styled.div`
     .flex {
-        display: flex;
-        flex: 1 1 auto;
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */ 
         flex-wrap: wrap;
         justify-content: center;
+        grid-row-gap: 1em;
+        row-gap: 1em;
         gap: 1em;
+        grid-column-gap: 1em;
+        column-gap: 1em;
 
         h3 {
             color: var(--white);
@@ -56,43 +62,19 @@ const GridStyle = styled.div`
 `;
 
 const DivStyle = styled.div`
-    display: flex;
-    gap: 2em;
     margin-bottom: 2em;
     align-items: space-evenly;
 
     div {
         margin-top: 1em;
-        width: 800px;
-    }
-
-    @media (max-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-
-        img {
-            height: 300px;
-            width: auto;
-        }
     }
 `;
 
 const DivStyleTwo = styled.div`
-    display: flex;
     margin-bottom: 2em;
-    gap: 2em;
 
     div {
         margin-top: 1em;
-    }
-
-    .gatsby-image-wrapper {
-        width: 600px;
-    }
-
-    @media (max-width: 1024px){
-        display: flex;
-        flex-direction: column-reverse;
     }
 `;
 
@@ -107,7 +89,7 @@ export const query = graphql`
     },
     triangleDelta: file(relativePath: { eq: "delta-t.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -142,7 +124,7 @@ export default function HomePage({ data }) {
             <RedHeadingStyle>
                 Who We Are
             </RedHeadingStyle>
-            <DivStyle>
+            <DivStyle className="grid-responsive">
                 <ParagraphStyle>
                     We are an organization of young men in the fields of engineering, science and architecture. 
                     Triangle men are students, doctors and professionals.
@@ -157,7 +139,7 @@ export default function HomePage({ data }) {
             </DivStyle>
 
             
-            <DivStyleTwo>
+            <DivStyleTwo className="grid-responsive">
                 <Img fluid={data.triangleDelta.childImageSharp.fluid}/>
                 <div>
                     <RedHeadingStyle>
@@ -201,12 +183,6 @@ export default function HomePage({ data }) {
                     </div>
                 </div>
             </GridStyle>
-            
-
-            <h2></h2>
-            <p>
-
-            </p>
         </div>
     );
 }

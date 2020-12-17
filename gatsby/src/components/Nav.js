@@ -44,12 +44,11 @@ const NavStyles = styled.nav`
     
     ul {
         display: flex;
-        gap: 2em;
+        justify-content: space-evenly;
         list-style-type: none;
         text-align: center;
         align-items: center;
         padding-inline-start: 0px;
-        margin: 0px;
         margin: auto;
         max-width: 80%;
     }
