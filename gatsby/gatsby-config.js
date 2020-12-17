@@ -35,7 +35,7 @@ export default {
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
-                trackingId: "G-FJ8MHR1RXV",
+                trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "",
                 head: true
             }
         }
