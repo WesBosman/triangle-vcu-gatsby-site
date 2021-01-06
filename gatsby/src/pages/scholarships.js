@@ -68,7 +68,7 @@ export default function ScholarshipPage({ data }){
             <h3>Requirements</h3>
             <RedBulletStyle>
                 <li>Enrolled in STEM field</li>
-                <li>Incomming Freshman, Sophomore or Transfer Student</li>
+                <li>Incoming Freshman, Sophomore or Transfer Student</li>
                 <li>GPA >= <SpanStyle>3.0</SpanStyle></li>
             </RedBulletStyle>
             <br/>
