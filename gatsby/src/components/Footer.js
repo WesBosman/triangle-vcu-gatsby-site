@@ -58,6 +58,10 @@ export default function Footer(){
                     </a>
                 </IconContext.Provider>
             </div>
+            <br/>
+            <a href="https://triangle.secure.force.com/pmtx/dn8n__SiteDonation?id=a1t2I000007eJY5" className="button">
+                Donate to the VCU CEF
+            </a>
         </FooterStyles>
     )
 }
