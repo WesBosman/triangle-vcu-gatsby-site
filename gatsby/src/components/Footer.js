@@ -47,7 +47,7 @@ export default function Footer(){
         <FooterStyles>
             <p>&copy; VCU Triangle {new Date().getFullYear()}</p>
             <p>
-                <a href="https://triangle.secure.force.com/pmtx/dn8n__SiteDonation?id=a1t2I000007eJY5" className="button">
+                <a href="https://triangle.secure.force.com/pmtx/dn8n__SiteDonation?id=a1t2I000007eJY5" target="_blank" rel="noopener" className="button">
                     Donate to the VCU CEF
                 </a>
             </p>
