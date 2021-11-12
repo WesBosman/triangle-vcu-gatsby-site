@@ -32,12 +32,12 @@ export default {
                 path: path.join(__dirname, `/src/assets/images`)
             }
         },
-        {
-            resolve: "gatsby-plugin-google-analytics",
-            options: {
-                trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "",
-                head: true
-            }
-        }
+        // {
+        //     resolve: "gatsby-plugin-google-analytics",
+        //     options: {
+        //         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "",
+        //         head: true
+        //     }
+        // }
     ]
 }
