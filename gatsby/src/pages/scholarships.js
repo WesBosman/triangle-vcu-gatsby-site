@@ -62,7 +62,7 @@ export default function ScholarshipPage({ data }){
             <h1>Scholarships</h1>
             <br/>
             <h3><SpanStyle>$1,000</SpanStyle> - VCU Triangle Leader Scholarship</h3>
-            <small><em>Deadline to apply February 14, 2021</em></small>
+            <small><em>Deadline to apply January 21, 2021</em></small>
             <br/>
             <br/>
             <h3>Requirements</h3>
